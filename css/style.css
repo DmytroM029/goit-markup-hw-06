@@ -939,8 +939,12 @@ textarea {
   margin-bottom: 5px;
 }
 
+.form-checkbox {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
 .policy {
-  display: inline;
   font-family: Roboto;
   font-style: normal;
   font-weight: 400;
