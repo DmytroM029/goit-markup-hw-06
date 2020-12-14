@@ -58,6 +58,11 @@ img {
   height: auto;
 }
 
+textarea {
+  /*44:00 Для комментариев в модельном окне https://www.youtube.com/watch?v=Ssws6DoJ3oY&feature=youtu.be*/
+  resize: none;
+}
+
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -883,6 +888,93 @@ img {
 .vector_icon {
   width: 11px;
   height: 11px;
+}
+
+.form {
+  width: 448px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  /*margin: 40px 40px 12px;*/
+}
+.mode-title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 12px;
+  color: #212121;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column; /*1:14:16 https://www.youtube.com/watch?v=Ssws6DoJ3oY&feature=youtu.be*/
+  margin-bottom: 10px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  /* identical to box height */
+
+  letter-spacing: 0.01em;
+
+  color: #757575;
+}
+
+/* ИЛИ .form-field input {/*1:14:16 https://www.youtube.com/watch?v=Ssws6DoJ3oY&feature=youtu.be*/
+/*width: 100%;
+}*/
+.form-field input {
+  padding: 11px 12px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+.form-field label {
+  /*1:17:00 https://www.youtube.com/watch?v=Ssws6DoJ3oY&feature=youtu.be*/
+  margin-bottom: 5px;
+}
+
+.policy {
+  display: inline;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  /* identical to box height, or 171% */
+
+  letter-spacing: 0.03em;
+
+  color: #757575;
+}
+.policy-info {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  /* identical to box height, or 171% */
+
+  letter-spacing: 0.03em;
+  text-decoration-line: underline;
+
+  color: #2196f3;
+}
+
+.form-checkbox input[type="checkbox"] {
+  width: 16px;
+  height: 15px;
+  border: #212121;
+}
+
+.mode-button {
+  display: inline-block;
+  margin-left: 164px;
 }
 
 /*/////////////////////portfolio.html////////////////////////*/
