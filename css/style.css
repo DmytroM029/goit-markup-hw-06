@@ -924,6 +924,7 @@ textarea {
   letter-spacing: 0.01em;
 
   color: #757575;
+  position: relative;
 }
 
 /* ИЛИ .form-field input {/*1:14:16 https://www.youtube.com/watch?v=Ssws6DoJ3oY&feature=youtu.be*/
@@ -937,6 +938,27 @@ textarea {
 .form-field label {
   /*1:17:00 https://www.youtube.com/watch?v=Ssws6DoJ3oY&feature=youtu.be*/
   margin-bottom: 5px;
+}
+.form-input {
+}
+.form-icons {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 80%;
+  left: 10px;
+  background-color: #ffffff;
+  transform: translateY(-80%);
+}
+.form-icons-mail {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  top: 70%;
+  left: 10px;
+  background-color: #ffffff;
+  transform: translateY(-70%);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .form-checkbox {
