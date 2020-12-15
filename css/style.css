@@ -797,7 +797,7 @@ textarea {
   padding-top: 10px;
 }
 
-.button-form::after {
+/*.button-form::after {
   content: "";
   display: inline-block;
   width: 24px;
@@ -806,7 +806,7 @@ textarea {
   background-image: url(/images/icon\ send.svg);
   background-size: contain;
   color: #ffffff;
-}
+}*/
 
 .button-form {
   display: inline-flex;
@@ -823,9 +823,21 @@ textarea {
   background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  justify-content: center;
+  padding-left: 29px;
+
   align-items: center;
   cursor: pointer;
+  position: relative;
+}
+
+.button-form-icons {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 50%;
+  right: 24px;
+  transform: translateY(-50%);
+  fill: #ffffff;
 }
 
 /*///////////////////Всплываюее окно///////////////*/
@@ -940,8 +952,7 @@ textarea {
   /*1:17:00 https://www.youtube.com/watch?v=Ssws6DoJ3oY&feature=youtu.be*/
   margin-bottom: 5px;
 }
-.form-input {
-}
+
 .form-icons {
   position: absolute;
   width: 20px;
