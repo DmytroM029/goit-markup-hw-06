@@ -943,10 +943,11 @@ textarea {
 /*width: 100%;
 }*/
 .form-field input {
-  padding: 11px 12px;
+  padding: 11px 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   cursor: pointer;
+  font-size: 14px; /*1:19:00 https://www.youtube.com/watch?v=Ssws6DoJ3oY&feature=youtu.be*/
 }
 .form-field label {
   /*1:17:00 https://www.youtube.com/watch?v=Ssws6DoJ3oY&feature=youtu.be*/
@@ -957,11 +958,12 @@ textarea {
   position: absolute;
   width: 20px;
   height: 20px;
-  top: 80%;
+  top: 75%;
   left: 10px;
   background-color: #ffffff;
-  transform: translateY(-80%);
+  transform: translateY(-75%);
 }
+
 .form-icons_mail {
   position: absolute;
   width: 18px;
@@ -1014,7 +1016,6 @@ textarea {
   font-size: 12px;
   line-height: 1.67;
   letter-spacing: 0.01em;
-
   color: rgba(117, 117, 117, 0.5);
   padding-top: 12px;
   padding-left: 16px;
@@ -1030,6 +1031,11 @@ textarea {
   display: inline-block;
   margin-left: 140px;
   margin-bottom: 40px;
+}
+
+.form-field:focus-within > .form-icons,
+.form-field:focus-within > .form-icons_mail {
+  fill: #2196f3;
 }
 
 /*/////////////////////portfolio.html////////////////////////*/
