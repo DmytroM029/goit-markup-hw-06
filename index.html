@@ -449,10 +449,17 @@
                 <label for="comment">Комментарий</label>
                 <textarea class="comment" name="comment" id="comment" rows="8" placeholder="Введите текст"></textarea>
             </div>
-            <div class="form-checkbox">
-            <input type="checkbox" name="policy" id="policy">
-           <label for="policy">Соглашаюсь с рассылкой и принимаю <a href="" class="policy-info">Условия договора</a></label>
-            </div>
+            
+            <!--============Кастомный Checkbox================-->
+            <label class="form-checkbox">
+            <input class="checkbox" type="checkbox" name="policy" value="css">
+            <span class="check-icon"></span>
+            <!--<svg class="check-icon">
+                <use href="./images/sprite.svg#check"></use>
+            </svg>-->
+            Соглашаюсь с рассылкой и принимаю <a href="" class="policy-info">Условия договора</a>
+            </label>
+        <!--===========Кастомный Checkbox END=============-->
             <button type="submit" class="button mode-button">Оставить заявку</button>
 
             </form>

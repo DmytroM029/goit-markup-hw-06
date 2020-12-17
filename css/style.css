@@ -949,6 +949,11 @@ textarea {
   cursor: pointer;
   font-size: 14px; /*1:19:00 https://www.youtube.com/watch?v=Ssws6DoJ3oY&feature=youtu.be*/
 }
+
+.form-field input:focus {
+  border: 3px solid #2196f3;
+}
+
 .form-field label {
   /*1:17:00 https://www.youtube.com/watch?v=Ssws6DoJ3oY&feature=youtu.be*/
   margin-bottom: 5px;
@@ -974,11 +979,11 @@ textarea {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-.form-checkbox {
+/*.form-checkbox {
   display: flex;
   text-align: center;
   justify-content: center;
-}
+}*/
 .policy {
   font-family: Roboto;
   font-style: normal;
@@ -1021,11 +1026,55 @@ textarea {
   padding-left: 16px;
 }
 
-.form-checkbox input[type="checkbox"] {
+/*.form-checkbox input[type="checkbox"] {
   width: 16px;
   height: 15px;
   border: #212121;
+}*/
+
+/*.checkbox:checked {
+  -webkit-appearance: none; /*1:20:00 https://www.youtube.com/watch?v=wahf3ZcDxV4&feature=youtu.be*/
+/* -moz-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 15px;
+}*/
+
+/*===================Кастомный Checkbox==================*/
+
+.form-checkbox {
+  display: flex;
+  align-items: center;
 }
+
+.checkbox {
+  -webkit-appearance: none; /*1:20:00 https://www.youtube.com/watch?v=wahf3ZcDxV4&feature=youtu.be*/
+  -moz-appearance: none;
+  appearance: none;
+  position: absolute;
+}
+.check-icon {
+  /*1:36:00https://www.youtube.com/watch?v=wahf3ZcDxV4&feature=youtu.be*/
+
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  border: 2px solid #000000;
+}
+
+.checkbox:checked + .check-icon {
+  /*1:36:00https://www.youtube.com/watch?v=wahf3ZcDxV4&feature=youtu.be*/
+
+  background-color: #2196f3;
+  background-image: url(/images/checkplus.svg);
+  background-size: contain;
+  background-origin: border-box;
+}
+
+/*===================Кастомный Checkbox END==================*/
 
 .mode-button {
   display: inline-block;
@@ -1036,6 +1085,10 @@ textarea {
 .form-field:focus-within > .form-icons,
 .form-field:focus-within > .form-icons_mail {
   fill: #2196f3;
+}
+
+.form-field:focus-within > .form-input {
+  border: 1px solid #2196f3;
 }
 
 /*/////////////////////portfolio.html////////////////////////*/
