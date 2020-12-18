@@ -1098,6 +1098,7 @@ textarea {
   background-size: contain;
   background-origin: border-box;
   border-color: transparent;
+  color: #ffffff;
 
   border: 1px solid #000000;
   border-color: #2196f3;
