@@ -1094,7 +1094,7 @@ textarea {
   /*1:36:00https://www.youtube.com/watch?v=wahf3ZcDxV4&feature=youtu.be*/
 
   background-color: #2196f3;
-  background-image: url(/images/checkplus.svg);
+  background-image: url(./images/checkplus.svg);
   background-size: contain;
   background-origin: border-box;
   border-color: transparent;
