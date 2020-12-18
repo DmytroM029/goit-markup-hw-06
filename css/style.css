@@ -961,15 +961,28 @@ textarea {
 
 .form-icons {
   position: absolute;
-  width: 20px;
-  height: 20px;
+  width: 18px;
+  height: 18px;
   top: 75%;
   left: 10px;
   background-color: #ffffff;
   transform: translateY(-75%);
 }
 
-.form-icons_mail {
+.form-input:focus ~ .form-icons,
+.form-input:hover ~ .form-icons {
+  fill: #2196f3;
+}
+
+.form-input:focus,
+.form-input:hover,
+.comment:focus,
+.comment:hover {
+  border: 1px solid #2196f3;
+  border-radius: 4px;
+}
+
+/*.form-icons_mail {
   position: absolute;
   width: 18px;
   height: 18px;
@@ -977,7 +990,7 @@ textarea {
   left: 10px;
   transform: translateY(-70%);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-}
+}*/
 
 /*.form-checkbox {
   display: flex;
@@ -1018,7 +1031,7 @@ textarea {
 .comment {
   font-family: Roboto;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 12px;
   line-height: 1.67;
   letter-spacing: 0.01em;
@@ -1027,15 +1040,15 @@ textarea {
   border: 1px solid rgba(33, 33, 33, 0.2);
 }
 
-.comment input::placeholder {
+.form-field textarea::placeholder {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
-  line-height: 1.14;
+  line-height: 1.14px;
   letter-spacing: 0.01em;
-
   color: rgba(117, 117, 117, 0.5);
+  padding-top: 8px;
 }
 
 /*.form-checkbox input[type="checkbox"] {
@@ -1113,9 +1126,9 @@ textarea {
   letter-spacing: 0.06em;
   border-radius: 4px;
   padding: 10px 32px;
-
+  border: 1px solid #2196f3;
+  outline: inherit;
   cursor: pointer;
-  animation-duration: 2200ms;
 }
 
 .form-field:focus-within > .form-icons,
