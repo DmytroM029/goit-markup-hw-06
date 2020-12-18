@@ -431,23 +431,25 @@
                 </svg>
                 <input type="text" id="name" autofocus class="form-input">
             </div>
-            <div class="form-field">
-                <label for="tell" class="form-label">Телефон</label>
+           
+                <label class="form-field form-label">Телефон
+                <input type="tell" class="form-input">
                 <svg class="form-icons">
                     <use href="./images/sprite.svg#phone-form"></use>
                 </svg>
-                <input type="tell" id="tell" class="form-input">
-            </div>
-            <div class="form-field">
-                <label for="mail" class="form-label">Почта</label>
+            </label>
+
+            
+                <label for="mail" class="form-field">Почта
+                <input type="email" id="mail" class="form-input">
                 <svg class="form-icons_mail">
                     <use href="./images/sprite.svg#form-mail_3"></use>
                 </svg>
-                <input type="email" id="mail" class="form-input">
-            </div> 
+                </label>
+           
             <div class="form-field form-field_comment">
                 <label for="comment">Комментарий</label>
-                <textarea class="comment" name="comment" id="comment" rows="8" placeholder="Введите текст"></textarea>
+                <textarea class="comment" name="comment" id="comment" rows="5" placeholder="Введите текст"></textarea>
             </div>
             
             <!--============Кастомный Checkbox================-->
@@ -460,7 +462,7 @@
             Соглашаюсь с рассылкой и принимаю <a href="" class="policy-info">Условия договора</a>
             </label>
         <!--===========Кастомный Checkbox END=============-->
-            <button type="submit" class="button mode-button">Оставить заявку</button>
+            <button type="submit" class="mode-button">Отправить</button>
 
             </form>
             

@@ -893,8 +893,8 @@ textarea {
 
 .modal-button:hover,
 .modal-button:focus {
-  fill: var(--hero-color);
-  background-color: var(--title-text-color);
+  fill: var(--title-text-color);
+  box-shadow: none;
 }
 
 .vector_icon {
@@ -913,7 +913,7 @@ textarea {
 .mode-title {
   font-family: Roboto;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
   text-align: center;
@@ -930,7 +930,7 @@ textarea {
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
-  line-height: 14px;
+  line-height: 1.66;
   /* identical to box height */
 
   letter-spacing: 0.01em;
@@ -984,7 +984,7 @@ textarea {
   text-align: center;
   justify-content: center;
 }*/
-.policy {
+.form-checkbox {
   font-family: Roboto;
   font-style: normal;
   font-weight: 400;
@@ -997,6 +997,7 @@ textarea {
   color: #757575;
   text-align: center;
   justify-content: center;
+  margin-top: 20px;
 }
 .policy-info {
   font-family: Roboto;
@@ -1008,10 +1009,10 @@ textarea {
 
   letter-spacing: 0.03em;
   text-decoration-line: underline;
-
   color: #2196f3;
   text-align: center;
   justify-content: center;
+  margin-left: 5px;
 }
 
 .comment {
@@ -1021,9 +1022,20 @@ textarea {
   font-size: 12px;
   line-height: 1.67;
   letter-spacing: 0.01em;
+  padding: 12px 16px;
+  border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.comment input::placeholder {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+
   color: rgba(117, 117, 117, 0.5);
-  padding-top: 12px;
-  padding-left: 16px;
 }
 
 /*.form-checkbox input[type="checkbox"] {
@@ -1059,10 +1071,10 @@ textarea {
   display: inline-block;
   width: 16px;
   height: 15px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+
   border-radius: 4px;
   border: 2px solid #000000;
+  margin-right: 7px;
 }
 
 .checkbox:checked + .check-icon {
@@ -1072,14 +1084,38 @@ textarea {
   background-image: url(/images/checkplus.svg);
   background-size: contain;
   background-origin: border-box;
+  border-color: transparent;
+
+  border: 1px solid #000000;
+  border-color: #2196f3;
+  box-sizing: border-box;
+  border-radius: 2px;
 }
 
 /*===================Кастомный Checkbox END==================*/
 
 .mode-button {
   display: inline-block;
+  margin-top: 30px;
   margin-left: 140px;
   margin-bottom: 40px;
+  width: 200px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  color: var(--hero-color);
+  background-color: var(--title-text-color);
+  font-family: inherit;
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  border-radius: 4px;
+  padding: 10px 32px;
+
+  cursor: pointer;
+  animation-duration: 2200ms;
 }
 
 .form-field:focus-within > .form-icons,
@@ -1087,8 +1123,11 @@ textarea {
   fill: #2196f3;
 }
 
-.form-field:focus-within > .form-input {
+.form-field:focus-within > .form-input,
+.form-field:focus-within > .comment {
   border: 1px solid #2196f3;
+  outline: inherit;
+  border-radius: 4px;
 }
 
 /*/////////////////////portfolio.html////////////////////////*/
