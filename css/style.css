@@ -746,7 +746,7 @@ textarea {
 
 .footer-form_item {
   display: block;
-  margin-left: 93px;
+  margin-left: 120px;
 }
 .footer-form_input {
   display: flex;
@@ -827,7 +827,7 @@ textarea {
 
   align-items: center;
   cursor: pointer;
-  position: relative;
+  position: relative;ы
 }
 
 .button-form-icons {
