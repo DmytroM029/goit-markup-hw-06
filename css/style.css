@@ -1039,6 +1039,8 @@ textarea {
 }
 
 .comment {
+  width: 100%;
+  height: 120px;
   font-family: Roboto;
   font-style: normal;
   font-weight: 400;
@@ -1048,6 +1050,7 @@ textarea {
   padding: 12px 16px;
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
+  resize: none;/*невозможно растягивать ширину 1:18:00 https://www.youtube.com/watch?v=6_Fq4G1pZas&feature=youtu.be*/
 }
 
 .form-field textarea::placeholder {
@@ -1076,7 +1079,7 @@ textarea {
 }*/
 
 /*===================Кастомный Checkbox==================*/
-
+/*ИЛИ 1:24:00 https://www.youtube.com/watch?v=6_Fq4G1pZas&feature=youtu.be*/
 .form-checkbox {
   display: flex;
   align-items: center;
