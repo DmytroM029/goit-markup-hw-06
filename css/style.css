@@ -843,7 +843,6 @@ textarea {
 /*///////////////////Всплываюее окно///////////////*/
 
 .backdrop {
-  margin-left: 135px;
   position: fixed;
   top: 0;
   left: 0;
