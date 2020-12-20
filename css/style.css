@@ -961,7 +961,17 @@ textarea {
 }
 
 .form-field input:focus {
-  border: 3px solid #2196f3;
+  border: 1px solid #2196f3;
+
+   outline: none;
+}
+
+/*ИЛИ*/
+
+.form-field:focus-within > .form-input,
+.form-field:focus-within > .comment {
+  border: 1px solid #2196f3;
+  border-radius: 4px;
 }
 
 .form-field label {
@@ -1064,6 +1074,8 @@ textarea {
   padding-top: 8px;
 }
 
+
+
 /*.form-checkbox input[type="checkbox"] {
   width: 16px;
   height: 15px;
@@ -1119,6 +1131,8 @@ textarea {
   border-radius: 2px;
 }
 
+
+
 /*===================Кастомный Checkbox END==================*/
 
 .mode-button {
@@ -1149,14 +1163,11 @@ textarea {
 .form-field:focus-within > .form-icons,
 .form-field:focus-within > .form-icons_mail {
   fill: #2196f3;
+  border: 1px solid #2196f3;
 }
 
-.form-field:focus-within > .form-input,
-.form-field:focus-within > .comment {
-  border: 1px solid #2196f3;
-  outline: inherit;
-  border-radius: 4px;
-}
+
+
 
 /*/////////////////////portfolio.html////////////////////////*/
 
