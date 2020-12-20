@@ -972,6 +972,7 @@ textarea {
 .form-field:focus-within > .comment {
   border: 1px solid #2196f3;
   border-radius: 4px;
+    outline: none;
 }
 
 .form-field label {
